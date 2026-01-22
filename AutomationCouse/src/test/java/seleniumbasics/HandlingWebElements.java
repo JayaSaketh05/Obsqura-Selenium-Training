@@ -13,6 +13,8 @@ public class HandlingWebElements extends Base {
         messageBox.sendKeys("test message");
 
         WebElement showsMsgButton = driver.findElement(By.xpath("//button[@id='button-one']"));
+        System.out.println(showsMsgButton.isDisplayed());
+        System.out.println(showsMsgButton.isEnabled());
         showsMsgButton.click();
 
         WebElement textMessage = driver.findElement(By.id("message-one"));

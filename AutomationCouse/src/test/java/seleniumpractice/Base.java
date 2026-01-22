@@ -10,16 +10,22 @@ public class Base {
 	public void initialiseBrowser() {
 		
 		driver = new ChromeDriver();
-		driver.get("https://google.com/");
-		driver.manage().window().fullscreen();
+		driver.get("https://selenium.qabible.in/");
+		driver.manage().window().maximize();
 	}
-
+	
+	public void browserCloseAndQuit() {
+		
+		//driver.close();
+		driver.quit();
+	}
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Base base = new Base();
 		base.initialiseBrowser();
-
+		base.browserCloseAndQuit();
+		
 	}
 
 }
