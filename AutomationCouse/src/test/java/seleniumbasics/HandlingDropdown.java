@@ -30,7 +30,7 @@ public class HandlingDropdown extends Base {
 		WebElement checkbox = driver.findElement(By.xpath("//input[@value='option-1']"));
 		checkbox.click();
 		System.out.println(checkbox.isSelected());
-		//checkbox.click();
+		checkbox.click();
 		
 	}
 	
